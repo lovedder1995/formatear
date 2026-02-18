@@ -1,5 +1,5 @@
 # Instalación
 
 ```bash
-npm install --global github:lovedder1995/formatear#2026.2.18-2
+npm install --global github:lovedder1995/formatear#2026.2.18-3
 ```
