@@ -9,7 +9,7 @@ const __dirname = dirname(__filename)
 = Formatear =
 =============
 */
-/* Ubicamos el ejecutable de ESLint */ const eslint = join(__dirname, "..", "node_modules", ".bin", "eslint-autocontenido")
+/* Ubicamos el ejecutable de ESLint */ const eslint = join(__dirname, "..", "node_modules", ".bin", "eslint")
 /* y su archivo de configuración. */ const configuración = join(__dirname, "..", "eslint.config.js")
 
 /* Formateamos con ESLint y su configuración */ ejecutar(`"${eslint}" --config "${configuración}" --fix .`, {

@@ -1,5 +1,5 @@
-import js from "eslint-js-autocontenido"
-import stylistic from "stylistic-eslint-plugin-autocontenido"
+import js from "@eslint/js"
+import stylistic from "@stylistic/eslint-plugin"
 import globals from "globals"
 export default [
 /*

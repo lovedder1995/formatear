@@ -1,17 +1,17 @@
 {
   "name": "formatear",
-  "version": "2026.2.17-4",
+  "version": "2026.2.18-1",
   "type": "module",
   "bin": {
     "formatear": "./bin/formatear.js"
   },
   "scripts": {
-    "formatear": "eslint-autocontenido --fix ."
+    "formatear": "eslint --fix ."
   },
   "dependencies": {
-    "eslint-autocontenido": "github:lovedder1995/eslint-autocontenido#2026.02.03.5",
-    "eslint-js-autocontenido": "github:lovedder1995/eslint-js-autocontenido#2026.02.03.2",
-    "globals": "^17.3.0",
-    "stylistic-eslint-plugin-autocontenido": "github:lovedder1995/stylistic-eslint-plugin-autocontenido#2026.02.04.2"
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^5.8.0",
+    "eslint": "^10.0.0",
+    "globals": "^17.3.0"
   }
 }
