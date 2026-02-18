@@ -36,4 +36,5 @@ export default [
             /* - La sangría se debe hacer de 4 en 4 espacios */ "@stylistic/indent": ["error", 4],
             /* - Los textos deben ser formados con comillas dobles */ "@stylistic/quotes": ["error", "double"],
             /* - No se deben usar puntos y comas al final de las líneas */ "@stylistic/semi": ["error", "never"],
-            /* - El útlimo elemento de una lista no debe tener una coma al final */ "@stylistic/comma-dangle": ["error", "never"] } } ]
+            /* - El útlimo elemento de una lista no debe tener una coma al final */ "@stylistic/comma-dangle": ["error", "never"],
+            /* - Los comentarios deben tener como mínimo un espacios al inicio y uno al final */ "@stylistic/spaced-comment": ["error", "always", { "block": { "balanced": true } }] } } ]
