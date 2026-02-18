@@ -12,6 +12,10 @@ const __dirname = dirname(__filename)
 /* Ubicamos el ejecutable de ESLint */ const eslint = join(__dirname, "..", "node_modules", ".bin", "eslint")
 /* y su archivo de configuración. */ const configuración = join(__dirname, "..", "eslint.config.js")
 
-/* Formateamos con ESLint y su configuración */ ejecutar(`"${eslint}" --config "${configuración}" --fix .`, {
-    /* desde la carpeta donde se está ejecutando el comando */ cwd: process.cwd(),
-    /* y mostramos todo lo que devuelva ESLint. */ stdio: "inherit" } )
+/* Y simplemente formateamos */ try {
+    /* con ESLint y su configuración */ ejecutar(`"${eslint}" --config "${configuración}" --fix .`, {
+        /* desde la carpeta donde se está ejecutando el comando */ cwd: process.cwd(),
+        /* y mostramos todo lo que devuelva ESLint. */ stdio: "inherit" } )
+
+/* ESLint puede devolver errores que no pudo corregir */ } catch (error) { if (error.status) { process.exit(error.status)
+/* o algún otro tipo de error si no se pudo ejecutar correctamente. */ } else { console.error("Error ejecutando ESLint:", error.message); process.exit(1) } }
