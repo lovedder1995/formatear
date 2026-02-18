@@ -1,5 +1,5 @@
 # Instalación
 
 ```bash
-npm install --save-dev github:lovedder1995/formatear#$revisión
+npm install --global github:lovedder1995/formatear#$revisión
 ```
